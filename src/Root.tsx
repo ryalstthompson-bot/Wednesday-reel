@@ -1,17 +1,17 @@
-import "./index.css";
-import { Composition } from "remotion";
-import { MyComposition } from "./Composition";
+import './index.css';
+import { Composition } from 'remotion';
+import { WednesdayReel } from './WednesdayReel';
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
-        id="MyComp"
-        component={MyComposition}
-        durationInFrames={60}
+        id="WednesdayReel"
+        component={WednesdayReel}
+        durationInFrames={600}
         fps={30}
-        width={1280}
-        height={720}
+        width={1080}
+        height={1920}
       />
     </>
   );
