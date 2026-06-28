@@ -1,0 +1,93 @@
+{
+  "name": "Wednesday Reel",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "ratio": "9:16",
+  "tracks": [
+    {
+      "type": "video",
+      "name": "main",
+      "items": [
+        {
+          "ref": "main-clip",
+          "path": "./assets/clip.mp4",
+          "start": 0,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "type": "audio",
+      "name": "voiceover",
+      "items": [
+        {
+          "path": "./assets/voiceover.mp3",
+          "start": 0,
+          "duration": 30,
+          "volume": 1.0
+        }
+      ]
+    },
+    {
+      "type": "audio",
+      "name": "music",
+      "items": [
+        {
+          "path": "./assets/music.mp3",
+          "start": 0,
+          "duration": 30,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "captions",
+      "items": [
+        {
+          "ref": "hook",
+          "text": "WATCH TILL THE END ⬇️",
+          "start": 0,
+          "duration": 3,
+          "fontSize": 20,
+          "color": "#FFFFFF",
+          "y": -0.35
+        },
+        {
+          "ref": "cta",
+          "text": "Follow for more every Wednesday",
+          "start": 27,
+          "duration": 3,
+          "fontSize": 16,
+          "color": "#FFFFFF",
+          "y": 0.35
+        }
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "op": "audio-fade",
+      "target": "music",
+      "fadeIn": 1.0,
+      "fadeOut": 2.0
+    },
+    {
+      "op": "text-style",
+      "target": "hook",
+      "style": {
+        "bold": true,
+        "shadow": true
+      }
+    },
+    {
+      "op": "text-style",
+      "target": "cta",
+      "style": {
+        "bold": true,
+        "shadow": true
+      }
+    }
+  ]
+}

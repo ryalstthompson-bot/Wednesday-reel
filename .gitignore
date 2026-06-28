@@ -5,3 +5,10 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# CapCut assets (large media files) — committed separately or via LFS
+capcut/assets/*.mp4
+capcut/assets/*.mov
+capcut/assets/*.mp3
+capcut/assets/*.wav
+capcut/assets/*.aac
